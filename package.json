@@ -1,0 +1,35 @@
+{
+  "name": "@unrest/vue-toolbar",
+  "license": "MIT",
+  "version": "0.0.3",
+  "repository": "https://github.com/chriscauley/unrest-vue-toolbar",
+  "author": "chriscauley",
+  "keywords": [
+    "vue",
+    "toolbar"
+  ],
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/unrest-vue-toolbar.umd.js",
+  "module": "./dist/unrest-vue-toolbar.es.js",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite",
+    "lint": "eslint \"src/**/*\"",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@unrest/vue-storage": "^0.0.19",
+    "lodash.startcase": "^4.4.0",
+    "vue": "^3.2.41"
+  },
+  "devDependencies": {
+    "@unrest/eslint-config": "^0.0.8",
+    "@vitejs/plugin-vue": "^3.2.0",
+    "@vue/cli-plugin-babel": "^5.0.4",
+    "@vue/compiler-sfc": "^3.2.37",
+    "autoprefixer": "^10.4.13",
+    "vite": "^3.2.3"
+  }
+}
