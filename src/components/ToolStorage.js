@@ -10,6 +10,9 @@ const ToolStorage = (LS_KEY, { tools, initial = {} }) => {
   const storage = ReactiveLocalStorage({ LS_KEY, initial })
 
   const makeTool = (options) => {
+    if (options === 'separator') {
+      return options
+    }
     if (options.getIcon) {
       throw 'DEPRECATED: Use icon instead of getIcon'
     }
