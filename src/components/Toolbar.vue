@@ -4,12 +4,17 @@
       <div class="btn-group">
         <template v-for="tool in tools" :key="tool.name">
           <div v-if="tool === 'separator'" class="ur-toolbar__separator btn -secondary" />
-          <unrest-dropdown v-else-if="tool.items" :items="tool.items" :class="tool.class">
+          <component
+            v-else
+            :is="tool.items ? 'unrest-dropdown' : 'div'"
+            @click="tool.click"
+            :items="tool.items"
+            :title="tool.name"
+            :class="tool.class"
+            :id="tool.id"
+          >
             <i :class="tool.icon" />
-          </unrest-dropdown>
-          <div v-else :title="tool.name" @click="tool.click" :class="tool.class">
-            <i :class="tool.icon" />
-          </div>
+          </component>
         </template>
         <slot name="buttons" />
       </div>
@@ -32,6 +37,7 @@
 
 <script>
 export default {
+  name: 'UnrestToolbar',
   props: {
     storage: Object,
   },

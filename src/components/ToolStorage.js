@@ -36,6 +36,7 @@ const ToolStorage = (LS_KEY, { tools, initial = {} }) => {
 
     return {
       slug,
+      id: options.id,
       icon: getIcon(selected_tool, variant_selected ? selected_variant : variants[0]),
       name: name || startCase(slug),
       class: `btn ${selected || toggle_selected ? '-primary' : '-secondary'}`,

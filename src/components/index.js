@@ -6,5 +6,5 @@ export default {
   ToolStorage,
   install(app) {
     app.component('UnrestToolbar', UnrestToolbar)
-  }
+  },
 }
