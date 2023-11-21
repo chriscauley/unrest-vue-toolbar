@@ -19,17 +19,21 @@
     "lint": "eslint \"src/**/*\"",
     "preview": "vite preview"
   },
+
   "dependencies": {
-    "@unrest/vue-storage": "^0.0.19",
-    "lodash.startcase": "^4.4.0",
-    "vue": "^3.2.41"
+    "lodash.startcase": "^4.4.0"
+  },
+  "peerDependencies": {
+    "@unrest/vue-storage": "^0.0.18",
+    "vue": "^3.2.37"
   },
   "devDependencies": {
     "@unrest/eslint-config": "^0.0.8",
-    "@vitejs/plugin-vue": "^3.2.0",
+    "@vitejs/plugin-vue": "^2.3.3",
     "@vue/cli-plugin-babel": "^5.0.4",
     "@vue/compiler-sfc": "^3.2.37",
     "autoprefixer": "^10.4.13",
-    "vite": "^3.2.3"
+    "vite": "^2.9.12",
+    "vue": "^3.2.37"
   }
 }
