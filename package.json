@@ -1,7 +1,7 @@
 {
   "name": "@unrest/vue-toolbar",
   "license": "MIT",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "repository": "https://github.com/chriscauley/unrest-vue-toolbar",
   "author": "chriscauley",
   "keywords": [
@@ -19,7 +19,6 @@
     "lint": "eslint \"src/**/*\"",
     "preview": "vite preview"
   },
-
   "dependencies": {
     "lodash.startcase": "^4.4.0"
   },
